@@ -32,10 +32,11 @@ const questions = [
 let score = 0;
 scoreDisplay.textContent = score;
 
-
-function populateQuestions(){
-    questions.forEach(question=>{
-        const questionBox = document.createElement("div")
-        questionBox.classList.add("question-box")
-    })
+function populateQuestions() {
+  questions.forEach((question) => {
+    const questionBox = document.createElement("div");
+    questionBox.classList.add("question-box");
+    questionDisplay.append(questionBox)
+  });
 }
+populateQuestions()
