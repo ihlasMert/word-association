@@ -8,9 +8,19 @@ const questions = [
     correct: 2,
   },
   {
+    quiz: ["close", "next", "near"],
+    options: ["trace", "adjacent"],
+    correct: 2,
+  },
+  {
     quiz: ["assume", "insight", "weather"],
     options: ["forecast", "sustainable"],
     correct: 1,
+  },
+  {
+    quiz: ["foreign", "national", "ethnic"],
+    options: ["trace", "adjacent"],
+    correct: 2,
   },
   {
     quiz: ["fast", "quick", "prompt"],
@@ -18,3 +28,14 @@ const questions = [
     correct: 2,
   },
 ];
+
+let score = 0;
+scoreDisplay.textContent = score;
+
+
+function populateQuestions(){
+    questions.forEach(question=>{
+        const questionBox = document.createElement("div")
+        questionBox.classList.add("question-box")
+    })
+}
